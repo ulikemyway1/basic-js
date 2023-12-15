@@ -23,7 +23,6 @@ function encodeLine(str) {
         } else {
           result += `${padStr[i]}`
         }
-        
         i = j - 1;
         break;
       }
