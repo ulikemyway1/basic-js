@@ -46,7 +46,6 @@ function repeater(str, options) {
   return resultLine;
 }
 
-console.log(repeater('TESTstr', { separator: 'ds', addition: 'ADD!', additionSeparator: ')))000' }))
 module.exports = {
   repeater
 };
