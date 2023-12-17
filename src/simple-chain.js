@@ -10,6 +10,9 @@ const chainMaker = {
     return this.result.length;
   },
   addLink(value) {
+    if (value === undefined) {
+      value = '';
+    }
     const item = String(value);
     this.result.push(`( ${item} )`);
     return this;
@@ -33,7 +36,7 @@ const chainMaker = {
    return finishedChain;
   }
 };
-
+console.log(chainMaker.addLink().finishChain())
 module.exports = {
   chainMaker
 };
